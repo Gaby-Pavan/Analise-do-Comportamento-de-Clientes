@@ -1,0 +1,34 @@
+-- Análise do faturamento da semana 17
+
+Select sum(tax), Day(date) as Dia
+from transactions left join tax on transactions.transaction_ID = tax.transaction_id
+Where Day(date) between 23 and 29
+
+-- Análise do faturamento por dia da semana 17
+
+Select sum(tax) AS Faturamento, Day(date) as Dia                                    
+from transactions left join tax on transactions.transaction_ID = tax.transaction_id
+Where Day(date) between 23 and 29
+group by Dia
+
+-- Proporção de Usuários Ativos Android x IOS
+
+select count(user),
+case
+    WHEN ios_user = 1 THEN "IOS"
+    WHEN android_user = 1 THEN "ANDROID"
+    else "outros"
+end as plataforma_usuario
+FROM user
+where churn = 0
+group by plataforma_usuario
+
+-- Analise de interações por hora
+
+select count(section_id), hour,sum(used_premium_feature),sum(liked)
+from interaction
+group by hour
+Order by hour
+
+
+
