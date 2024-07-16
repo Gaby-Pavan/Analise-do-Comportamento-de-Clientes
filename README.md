@@ -1,5 +1,5 @@
 
-**Análise do Comportamento dos Clientes de uma Fintech**
+**Análise do Comportamento dos Clientes de uma Fintech para Lançamento de nova Funcionalidade**
 
 CONTEXTO DO PROJETO:
 Uma fintech especializada em transferências bancárias que opera dos EUA, será responsável por lançar um serviço de transferência instantânea nos Estados Unidos da América (PS: eles não têm PIX por lá…). Mas para garantir o sucesso do lançamento, gostariam de levantar algumas informações para definir a melhor data de lançamento dessa nova funcionalidade.
